@@ -5,8 +5,8 @@ module.exports = function (sequelize, DataTypes) {
         {
             title: DataTypes.STRING,
             description: DataTypes.STRING,
-            latitude: DataTypes.DOUBLE,
-            longitude: DataTypes.DOUBLE
+            lat: DataTypes.DOUBLE,
+            lng: DataTypes.DOUBLE
         });
     return Marker;
 };

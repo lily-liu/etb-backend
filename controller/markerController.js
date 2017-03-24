@@ -15,12 +15,12 @@ module.exports = {
             }
         });
     },
-    createMarker: function (title1, description1, lat1, long1) {
+    createMarker: function (title1, description1, lat1, lng1) {
         return model.marker.create({
             title: title1,
             description: description1,
-            latitude: lat1,
-            longitude: long1
+            lat: lat1,
+            lng: lng1
         });
 
     }

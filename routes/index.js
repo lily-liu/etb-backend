@@ -30,8 +30,8 @@ router.delete('/markers/:id', function (req, res, next) {
 
 /* POST create marker. */
 router.post('/markers', function (req, res, next) {
-    console.log(req.body.title, req.body.description, req.body.lat, req.body.long);
-    markerController.createMarker(req.body.title, req.body.description, req.body.lat, req.body.long).then(function (data) {
+    console.log(req.body.title, req.body.description, req.body.lat, req.body.lng);
+    markerController.createMarker(req.body.title, req.body.description, req.body.lat, req.body.lng).then(function (data) {
         res.json(data);
     })
 });
