@@ -19,8 +19,8 @@ module.exports = {
         return model.marker.create({
             title: title1,
             description: description1,
-            lat: lat1,
-            long: long1
+            latitude: lat1,
+            longitude: long1
         });
 
     }
